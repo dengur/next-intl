@@ -1,7 +1,7 @@
 {
-  "version": "2.23.0",
+  "version": "2.22.1",
   "packages": [
-    "packages/next-intl/dist/*"
+    "packages/*"
   ],
   "useWorkspaces": true,
   "npmClient": "pnpm",
