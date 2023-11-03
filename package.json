@@ -1,6 +1,6 @@
 {
-  "name": "root",
-  "private": true,
+  "name": "next-intl-unn",
+  "private": false,
   "scripts": {
     "build": "turbo run build",
     "test": "turbo run test --concurrency 1",
