@@ -3,6 +3,122 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.23.0](https://github.com/dengur/next-intl/compare/v2.22.1...v2.23.0) (2023-11-03)
+
+
+### Bug Fixes
+
+* Allow unknown routes in localized pathnames navigation APIs ([#493](https://github.com/dengur/next-intl/issues/493)) ([3481a59](https://github.com/dengur/next-intl/commit/3481a59ed2e1b3785160a3822840353edea67dde))
+* Fix type signature of the plugin and improve condition for printing a warning in case a legacy i18n config is in use ([#241](https://github.com/dengur/next-intl/issues/241)) ([de5115c](https://github.com/dengur/next-intl/commit/de5115c12abb2afd55fc3f3c46dc9bbcee446091))
+* **Next.js 13 RSC:** Improvements for routing APIs ([#277](https://github.com/dengur/next-intl/issues/277)) ([23f44e2](https://github.com/dengur/next-intl/commit/23f44e2840c3a4ac14bc32be27228920b4a98e93))
+* **RSC:** Always read header in RSC render ([#506](https://github.com/dengur/next-intl/issues/506)) ([37c131b](https://github.com/dengur/next-intl/commit/37c131b6b8e778ca0fa11989eba671e144cd3307))
+* **RSC:** Fixed the search not being added on localized pathname redirects ([#569](https://github.com/dengur/next-intl/issues/569)) ([d1b398d](https://github.com/dengur/next-intl/commit/d1b398d4bc34953b46102a1b25202e4baff1362a))
+* **RSC:** Remove pages router import and require explicit `locale` when used in Pages Router ([#520](https://github.com/dengur/next-intl/issues/520)) ([4f93607](https://github.com/dengur/next-intl/commit/4f936075f6fc645cba7d22880a0fb9b8e9eebfc9))
+* **RSC:** Return `string` from `(await getTranslator()).rich` ([#395](https://github.com/dengur/next-intl/issues/395)) ([b423baa](https://github.com/dengur/next-intl/commit/b423baa7e6fb23ea241a547f64e75f2a1d2c0ad5))
+* **RSC:** Use `webpackConfig.context` instead of `process.cwd()` to detect i18n config ([#579](https://github.com/dengur/next-intl/issues/579)) ([61b2bce](https://github.com/dengur/next-intl/commit/61b2bceedbf0f55c02e8f1ea2ad09e0e6e9250a4))
+
+
+### Features
+
+* Add built-in pathname localization ([#426](https://github.com/dengur/next-intl/issues/426)) ([f408d92](https://github.com/dengur/next-intl/commit/f408d92d927b27ffe41d7489b488485e94f3a35d))
+* Improvements for localized `Link` ([#257](https://github.com/dengur/next-intl/issues/257)) ([a08b91b](https://github.com/dengur/next-intl/commit/a08b91b52c8dd78b368003de4e99955aa66c2894))
+* New APIs for using `next-intl` outside of components ([#339](https://github.com/dengur/next-intl/issues/339)) ([0f3116b](https://github.com/dengur/next-intl/commit/0f3116b9e41cc2325afe9581269c16064269227e))
+* **RSC:** Add `getPathname` for localized navigation ([#510](https://github.com/dengur/next-intl/issues/510)) ([50cd7ee](https://github.com/dengur/next-intl/commit/50cd7eee1a9d96395b3c1eacc541aeebc12bc559))
+* **RSC:** Add `t.markup` and unify function signature of `t.rich` ([#571](https://github.com/dengur/next-intl/issues/571)) ([581c16b](https://github.com/dengur/next-intl/commit/581c16b9cb301a6a831a72910c22b3f94e99b1f9))
+* **RSC:** Add CDN caching patch ([#311](https://github.com/dengur/next-intl/issues/311)) ([017fd93](https://github.com/dengur/next-intl/commit/017fd9341709940d31a4a0f30b6855cabd4a66a2))
+* **RSC:** Add defaults for `locale`, `now` and `timeZone` for `NextIntlClientProvider` when used from RSC ([#517](https://github.com/dengur/next-intl/issues/517)) ([9697c3c](https://github.com/dengur/next-intl/commit/9697c3cd553db8c395aed7ceaf98e6fa5a952b67))
+* **RSC:** Add support for `redirect` in Client Components ([4b61c06](https://github.com/dengur/next-intl/commit/4b61c06466b2e9a158a02e281c07f82e309a5deb))
+* **RSC:** Better error handling for missing context ([#508](https://github.com/dengur/next-intl/issues/508)) ([106c098](https://github.com/dengur/next-intl/commit/106c09887189040aa827976c69df7d6598d98ebb))
+* **RSC:** Experimental SSG ([#509](https://github.com/dengur/next-intl/issues/509)) ([6836f20](https://github.com/dengur/next-intl/commit/6836f20bd52bd06e01ee4f5f85d8e77b67207830))
+* **RSC:** Optimize bundle size ([#489](https://github.com/dengur/next-intl/issues/489)) ([e475cb2](https://github.com/dengur/next-intl/commit/e475cb24810e4a4c41426f2949a3563a208bceda))
+* **RSC:** Remove deprecations and RSC-first docs ([#522](https://github.com/dengur/next-intl/issues/522)) ([549dc17](https://github.com/dengur/next-intl/commit/549dc178a3415c06e8330a600d9213d63c1c92fb))
+
+
+### Reverts
+
+* Revert "chore(Next.js 13 RSC): Switch to tsup for bundling" ([e4b2275](https://github.com/dengur/next-intl/commit/e4b2275a8229cc5d70158f220d9804bdcda91526))
+
+
+
+# [2.13.0-beta.2](https://github.com/dengur/next-intl/compare/v2.13.0-beta.1...v2.13.0-beta.2) (2023-04-06)
+
+
+
+# [2.13.0-beta.1](https://github.com/dengur/next-intl/compare/v2.12.0...v2.13.0-beta.1) (2023-04-05)
+
+
+### Features
+
+* Improve locale detection for prefixed routing ([#214](https://github.com/dengur/next-intl/issues/214)) ([3d7cc1d](https://github.com/dengur/next-intl/commit/3d7cc1deca6aa397b6e6e3baa3208a9c5283ef79))
+* Improve named routes implementation ([#213](https://github.com/dengur/next-intl/issues/213)) ([666c1df](https://github.com/dengur/next-intl/commit/666c1dfab8c8000347f6d227e362076dc09a5c1b))
+* Next.js 13 RSC Domain middleware improvements ([#223](https://github.com/dengur/next-intl/issues/223)) ([36ae25d](https://github.com/dengur/next-intl/commit/36ae25df76468431c50d9bc18aa24f8127687d09))
+* Next.js 13 RSC middleware improvements ([#212](https://github.com/dengur/next-intl/issues/212)) ([cc6c9b8](https://github.com/dengur/next-intl/commit/cc6c9b844b0058b66b821f1aee5187276b2c0d69))
+
+
+
+# [2.12.0-beta.1](https://github.com/dengur/next-intl/compare/v2.12.0-alpha.1...v2.12.0-beta.1) (2023-03-06)
+
+
+
+# [2.12.0-alpha.1](https://github.com/dengur/next-intl/compare/v2.11.0...v2.12.0-alpha.1) (2023-03-06)
+
+
+### Bug Fixes
+
+* Add tests to ensure links work and downgrade Next.js ([#196](https://github.com/dengur/next-intl/issues/196)) ([e0bd177](https://github.com/dengur/next-intl/commit/e0bd1775d3f6d70976b5c2b4760046cbcec852ef))
+* Handle invalid `accept-language` header gracefully ([#192](https://github.com/dengur/next-intl/issues/192)) ([9b564f9](https://github.com/dengur/next-intl/commit/9b564f9a4722fca06eaa71df62a8a2f425c29db7))
+
+
+### Features
+
+* Add example with `pages` and `app` directory ([#175](https://github.com/dengur/next-intl/issues/175)) ([cc7c295](https://github.com/dengur/next-intl/commit/cc7c2958e443de8c6a4da56c9ef421872cbe67b9))
+* Awaitables for Next.js 13 RSC integration ([#184](https://github.com/dengur/next-intl/issues/184)) ([44af8ab](https://github.com/dengur/next-intl/commit/44af8abf987623ce7104f71093e4ced3650341a1))
+* Improve landing page design ([#207](https://github.com/dengur/next-intl/issues/207)) ([e076182](https://github.com/dengur/next-intl/commit/e07618247984cda5213d6fb787302122f917af54))
+* Next.js 13 RSC routing clean up & add `redirect` ([#187](https://github.com/dengur/next-intl/issues/187)) ([f8fefd2](https://github.com/dengur/next-intl/commit/f8fefd2174dbb226f7772977267cdd0b5d2ec193))
+* Return alternate language links as headers from middleware ([#195](https://github.com/dengur/next-intl/issues/195)) ([f55424a](https://github.com/dengur/next-intl/commit/f55424ac646e48009a1a214cf68aeaa5a64c780a))
+* Unprefixed routing for default locale & domain-based locale matching ([#186](https://github.com/dengur/next-intl/issues/186)) ([68ce7db](https://github.com/dengur/next-intl/commit/68ce7db79383900de2d46bb69dd5c175a6d0c7d1))
+
+
+### Reverts
+
+* Revert "3.0.0-beta.1" ([643af24](https://github.com/dengur/next-intl/commit/643af24ddce2acffe8a69b3428acc6e52a0f9ec5))
+
+
+
+# [2.11.0-beta.6](https://github.com/dengur/next-intl/compare/v2.11.0-alpha.2...v2.11.0-beta.6) (2023-02-01)
+
+
+### Features
+
+* RSC with static config ([#156](https://github.com/dengur/next-intl/issues/156)) ([d043943](https://github.com/dengur/next-intl/commit/d043943ab792c412d1b9c2f652ec6e60643fd3fb)), closes [#152](https://github.com/dengur/next-intl/issues/152) [#154](https://github.com/dengur/next-intl/issues/154)
+
+
+### Reverts
+
+* Revert "Remove `next-intl` unit tests as we're moving to e2e tests" ([b375b4f](https://github.com/dengur/next-intl/commit/b375b4f99fb23db89e62138a6e9ca469d2c2dff6))
+* Revert "Fix lint" ([1d385fe](https://github.com/dengur/next-intl/commit/1d385fefacce43ceaf0f920179bc7d51b7de833c))
+* Revert "v2.11.0-alpha.2" ([4fb3aea](https://github.com/dengur/next-intl/commit/4fb3aea071e959f55db2c30fab37783257b9b29c))
+
+
+
+# [2.11.0-alpha.2](https://github.com/dengur/next-intl/compare/v2.10.2...v2.11.0-alpha.2) (2022-12-09)
+
+
+
+# [2.11.0-alpha.1](https://github.com/dengur/next-intl/compare/v2.10.1...v2.11.0-alpha.1) (2022-12-09)
+
+
+
+# [2.10.0-alpha.4](https://github.com/dengur/next-intl/compare/v2.9.2...v2.10.0-alpha.4) (2022-12-09)
+
+
+
+# [2.10.0-alpha.3](https://github.com/dengur/next-intl/compare/v2.9.1...v2.10.0-alpha.3) (2022-12-08)
+
+
+
+
+
 ## 2.22.1 (2023-11-02)
 
 
